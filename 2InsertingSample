@@ -1,0 +1,23 @@
+INSERT INTO Students (first_name, last_name, date_of_birth, contact_number, email, address)
+VALUES ('Amit', 'Sharma', '2002-04-12', '9876543210', 'amit.sharma@example.com', '45/B, Delhi'),
+       ('Sneha', 'Patel', '2001-08-22', '8765432109', 'sneha.patel@example.com', '12/A, Mumbai');
+
+INSERT INTO Courses (course_name, instructor, credits)
+VALUES ('Data Structures', 'Dr. Verma', 4),
+       ('Operating Systems', 'Dr. Iyer', 3),
+       ('Database Systems', 'Dr. Rao', 4);
+
+INSERT INTO Enrollments (student_id, course_id, enrollment_date)
+VALUES (1, 1, '2024-01-15'),
+       (1, 2, '2024-01-16'),
+       (2, 3, '2024-01-17');
+
+INSERT INTO Grades (enrollment_id, grade)
+VALUES (1, 8.5),
+       (2, 7.8),
+       (3, 9.2);
+
+INSERT INTO Attendance (enrollment_id, attendance_date, status)
+VALUES (1, '2024-02-01', 'Present'),
+       (2, '2024-02-01', 'Absent'),
+       (3, '2024-02-01', 'Present');
